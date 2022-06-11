@@ -33,18 +33,6 @@ body{
         font-family: var(--primary-font);
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .container{
     width: 1200px;
@@ -76,8 +64,7 @@ body{
 
 /* ========== HEADER ========== */
 .page-header{
-    padding-top: 25px;
-    padding-bottom: 25px;
+    position: relative;
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -92,11 +79,14 @@ body{
     display: flex;
     align-items: center;
     
+    
 }
 
 .menu{
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact-list-header{
@@ -114,7 +104,7 @@ body{
 }
 
 .menu-link{
-        position: relative;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -137,10 +127,9 @@ body{
 .current::after {
     position: absolute;
     display: block;
-    top: 18px;
+    bottom: -1px;
     width: 48px;
     height: 4px;
-    margin-top: 28px;
     background-color: #2196F3;
     border-radius: 2px;
     content: "";
@@ -783,4 +772,17 @@ body{
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
